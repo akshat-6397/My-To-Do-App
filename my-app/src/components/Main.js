@@ -17,15 +17,16 @@ const Main = () => {
       alert("Please enter correct task");
     } else if (item?.length && !toggleSubmit) {
       setItemList(
-        itemList?.map((ele) => {
-          if (ele.id === editItemId) {
-            return {
-              ...ele,
-              name: item?.length > 20 ? item?.slice(0, 20) + "..." : item,
-            };
-          }
-          return ele;
-        })
+        itemList?.length &&
+          itemList?.map((ele) => {
+            if (ele.id === editItemId) {
+              return {
+                ...ele,
+                name: item?.length > 20 ? item?.slice(0, 20) + "..." : item,
+              };
+            }
+            return ele;
+          })
       );
       setToggleSubmit(true);
       setItem("");
@@ -58,6 +59,7 @@ const Main = () => {
 
   const handleRemoveAll = () => {
     setItemList([]);
+    localStorage.clear();
   };
 
   const handleEditClick = (id) => {
