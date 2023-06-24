@@ -1,0 +1,128 @@
+.main-container {
+    min-height: 100vh;
+    background-color: #7a7adb;
+  background-image: linear-gradient(315deg, #7a7adb 0%, #170e13 74%); 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image img {
+    width: 80px;
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .add-btn {
+    position: relative;
+    right: 25px;
+    top:2px;
+    color: black;
+  }
+  .add-Items input {
+    height: 25px;
+    border-radius: 5px;
+    width: 260px;
+    border: none;
+    padding: 5px 10px;
+    outline: none;
+    font-family: sans-serif;
+  }
+  .add-Items i:hover{
+      color:green;
+      cursor: pointer;
+  }
+  .add-Items {
+      margin-bottom: 30px;
+  }
+  .eachItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0000FF;
+    color: white;
+    width: 260px;
+    height: 25px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .eachItem h5 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .eachItem i {
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  .eachItem:hover {
+      background-color: white;
+      color: #0000FF;
+  }
+  .eachItem i:hover {
+      cursor: pointer;
+  }
+  .eachItem:hover > .icons > .edit-btn{
+      color: green;
+  }
+  .eachItem:hover > .icons > i{
+      color:red;
+  }
+  .btn {
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 35px;
+      width: 110px;
+      color:white;
+      background-color: #0000FF;
+      font-family: sans-serif;
+      font-weight: bold;
+      border:none;
+  }
+  .btn-parent{
+      display: flex;
+      justify-content: center;
+      margin-top:20px;
+  }
+  
+  .btn:hover {
+      background-color: white;
+      color: #0000FF;
+      cursor: pointer;
+  }
+  .icons {
+      display: flex;
+  }
+  .edit-btn {
+      padding-right:10px !important;
+  }
+  .editBtn {
+      color: green;
+  }
+  .second-btn-parent {
+      display: flex;
+      justify-content: center;
+  }
+  .second-btn {
+      margin-top: 10px;
+      border-radius: 10px;
+      height: 35px;
+      color:white;
+      background-color: #0000FF;
+      font-family: sans-serif;
+      font-weight: bold;
+      border:none;
+  }
+  .second-btn:hover {
+      background-color: white;
+      color: #0000FF;
+      cursor: pointer;
+  }
