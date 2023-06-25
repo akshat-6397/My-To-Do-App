@@ -9,7 +9,8 @@ const Main = () => {
   const [editItemId, setEditItemId] = useState(null);
 
   useEffect(() => {
-    setItemList(JSON.parse(localStorage.getItem("list")));
+    const storedList = JSON.parse(localStorage.getItem("list"));
+    setItemList(storedList || []);
   }, []);
 
   const handleAddClick = () => {
